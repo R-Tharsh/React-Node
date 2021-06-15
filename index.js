@@ -19,20 +19,20 @@ app.post("/api/forma", (req, res) => {
     service: "Gmail",
     port: 465,
     auth: {
-      user: "tharshanrobert001@gmail.com",
-      pass: "Tharsh*2018",
+      user: "****yourMail****",
+      pass: "****yourPassword****",
     },
   });
 
   let mailOptions = {
     from: data.email,
-    to: "tharshanrobert001@gmail.com",
+    to: "****yourMail****",
     subject: `Mesage from ${data.email}`,
     html: `
             <h3>Informations</h3>
             <ul>
-                <li>Name: ${data.name}</li>
-                <li>Name: ${data.lastname}</li>
+                <li>First Name: ${data.name}</li>
+                <li>Last Name: ${data.lastname}</li>
             </ul>
 
             <h3>Message</h3>
