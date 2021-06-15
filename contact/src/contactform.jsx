@@ -80,7 +80,11 @@ export default class ContactForm extends Component {
     return (
       <div>
         <div>
-          <Form style={{ marginTop: "40px" }}>
+          <Form
+            onSubmit={this.formSubmit}
+            method="POST"
+            style={{ marginTop: "40px", marginLeft: "20px" }}
+          >
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridName">
                 <Form.Label>Name</Form.Label>
@@ -133,7 +137,11 @@ export default class ContactForm extends Component {
               />
             </Form.Group>
 
-            <Button variant="dark" type="submit">
+            <Button
+              style={{ marginLeft: "600px" }}
+              variant="dark"
+              type="submit"
+            >
               Submit
             </Button>
           </Form>

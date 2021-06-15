@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import ContactForm from "./contactform";
+import Header from "./header";
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
     <ContactForm />
   </React.StrictMode>,
   document.getElementById("root")
